@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="841600fe-bdb9-40fb-a2cf-076e99c76d12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mysite4/blog/templates/blog/post_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mysite4/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite4/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite4/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite4/mysite4/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite4/mysite4/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite4/blog/templates/blog/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite4/blog/templates/blog/post_list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
