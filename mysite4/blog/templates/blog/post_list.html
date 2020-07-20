@@ -1,12 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>JoiRichi's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
 </head>
 <body style="font-family: sans-serif;
     margin-top: 80px;
-    padding: 30px; height: 125vh;  background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg')" >
+    padding: 30px; height: 125vh; background-color: Black; )" >
 
 <header style=" *display: inline;  background-color: white;
     position: fixed;
@@ -15,6 +24,8 @@
     right: 0;
     height: 80px;
     display: flex;
+    background-color: Green;
+
     align-items: center;">
     <nav>
         <ul>
@@ -24,8 +35,22 @@
         </ul>
     </nav>
 </header>
-<h4 align="center">My page</h4>
-<p style="color: white">hi, this site is under construction, stay tuned. </p>
+
+<div class="page-header">
+            <h1><a href="/">Joi-Richi's Blog</a></h1>
+        </div>
+
+
+
+{% for post in posts %}
+    <div class="post">
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p style="color: white">{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+
+<p style="color: #ffe6ff">hi, this site is under construction, stay tuned. </p>
 
 </body>
 </html>
